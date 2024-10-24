@@ -270,6 +270,12 @@ nav li {
 
 
   /* Styling Meet Pages*/
+  h1 a:hover{
+    background-color: #F6F7EB;
+    font-style: italic;
+     
+  }
+  
   table {
     width: 100%;
     border-collapse: collapse;
