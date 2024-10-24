@@ -43,11 +43,6 @@ h1 a{
 
 }
 
-h1 a:hover{
-    background-color: #1B264F;
-    text-decoration: underline;
-}
-
 h2{
   display: block;
     font-size: 60px;
@@ -60,8 +55,6 @@ body{
     margin: auto;
     padding: 0;
 }
-
-
 
 .Carousel{
     height: 50vw;
