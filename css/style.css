@@ -272,45 +272,48 @@ nav a {
 
 
 
-  nav{
+nav{
     display: none; 
     position: sticky;
     top:0;
     background-color: #1B264F;
     color: #F6F7EB;
+    border-bottom: 3px solid #0e1429;
+    width: 100%
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+}
+
+nav li {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 nav a {
   transition-duration: 0.5s;
   text-decoration: none;
   color: #F6F7EB;
-  display: flex;
+  display: block;
   text-align: center;
   padding: 16px;
 
 }
 
-
 nav a:hover{
   background-color: #0e1429;
 
-}
-
-  nav ul {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav li {
-    float: left;
-    margin: auto;
-    font-size: 40px;
-    align-items: center;
 }
 
 
