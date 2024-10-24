@@ -13,6 +13,8 @@ div{
   font-size: 30px;
 }
 
+/* Skip link */
+
 .skip{
     color:#1B264F;
     position: absolute;
@@ -31,6 +33,8 @@ div{
   background-color: #F6F7EB;
 }
 
+/* End Skip Link*/
+
 
 h1{
     color:#1B264F;
@@ -40,12 +44,19 @@ h1{
 
 h1 a{
     color:inherit;
-
+    text-decoration: none;
 }
 
 h1 a:hover{
-    background-color: #1B264F;
-    text-decoration: underline;
+    background-color: #F6F7EB;
+    font-style: italic;
+    text-decoration: underline solid #1B264F 8px;
+
+}
+
+h1 a:focus{
+  font-style: italic;
+  text-decoration: underline solid #1B264F 8px;
 }
 
 h2{
@@ -78,21 +89,14 @@ nav a {
 
 }
 
+/* Main section */
+
 .Carousel{
     height: 50vw;
     width: 50vw;
     margin:auto; 
 }
 
-
-.results_table{
-   margin: auto;
-}
-
-footer{
-    padding-top: 10px;
-    background-color: #6d98ba;
-}
 
   /* Meet Grid */
   #menu{
@@ -126,6 +130,8 @@ footer{
   /* About Section Styling */
   
   #about  {
+    background-color: #1B264F;
+    color:#F6F7EB;
     font-family: inherit;
     font-size: inherit;
     text-align: center;
@@ -135,6 +141,12 @@ footer{
     align-items: center;
 
   }
+
+  #about h2{
+    color:#F6F7EB
+  }
+
+
   #about img{
     width: 100px; 
     vertical-align: middle;
@@ -142,9 +154,10 @@ footer{
   
 
   #about a:hover{
-    background-color: #F6F7EB;
-    border: 5px  solid #1B264F;
+    background-color: #1B264F;
+    border: 5px  solid #F6F7EB;
     border-radius: 25px;
+    transition: 0.3s;
   }
 
 
@@ -165,8 +178,10 @@ footer{
 }
 
    .about-buttons .fa-instagram {
-    color:#1B264F;
+    color:#F6F7EB;
     font-size: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* End About Section Styles*/
@@ -287,6 +302,32 @@ nav li {
 
 
   /* Styling Meet Pages*/
+
+  #summary{
+    background-color: #1B264F;
+    color: #F6F7EB;
+    padding: 10px 20px 10px 20px;
+  }
+
+  #summary h2{
+    color: #F6F7EB;
+    padding: 0px;
+  }
+
+  #summary p {
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+
+  #gallery{
+    background-color: #1B264F;
+  }
+
+  #gallery h2{
+    color:#F6F7EB;
+  }
   
   table {
     width: 100%;
@@ -344,7 +385,6 @@ nav li {
   footer {
     font-size: 25px;
       padding-top: 10px;
-      background-color: #6d98ba;
   }
 
 /* Tablet View*/
