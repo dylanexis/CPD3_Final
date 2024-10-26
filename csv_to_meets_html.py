@@ -53,17 +53,7 @@ def csv_to_html(csv_filename, output_folder):
          </div>
       </div>
    </div>
-   
-   
-   <nav>
-     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#team-results">Team Results</a></li>
-        <li><a href="#individual-results">Individual Results</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-     </ul>
-   </nav>
+    
    <header>
       <!--Meet Info-->
        
