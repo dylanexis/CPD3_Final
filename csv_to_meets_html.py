@@ -40,7 +40,7 @@ def csv_to_html(csv_filename, output_folder):
    <a href = "#main">Skip to Main Content</a>
    <!--Navbar-->
    <div class ="navbar">
-      <a href ="../index.html">Home</a>
+      <a href ="index.html">Home</a>
       <div class = "dropdown">
          <button class = "dropbtn">More
          <i class="fa fa-caret-down"></i>
