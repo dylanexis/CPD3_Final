@@ -5,7 +5,6 @@ body{
     font-weight: bolder;
     text-align: center;
     background-color: #F6F7EB;
-    letter-spacing: -0.01cm;
     margin: auto;
     padding: 0;
 }
@@ -33,6 +32,8 @@ a.skip:focus {
 a.skip:hover{ 
   background-color: #F6F7EB;
 }
+
+
 
   /* NavBar and Dropdown*/
   .navbar {
@@ -95,28 +96,32 @@ a.skip:hover{
   
   .dropdown-content a:hover {
     background-color: #0e1429;
+
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-/* End Skip Link*/
 
+.SXC{
+  line-height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 h1{
     color:#1B264F;
     padding: 10px;
     font-size: 100px;
+    line-height: 50px;
 }
+
 
 header h1 a{
     font-size: 60px;
     color:inherit;
     text-decoration: none;
-    line-height: -1;
-    
- 
 }
 
 header h1 a:hover{
@@ -135,12 +140,14 @@ h2{
   display: block;
     font-size: 60px;
     color:#1B264F;
-    width: 100%
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header h2 {
   padding-top: 0;
-  font-size: 45px;
+  font-size: 30px;
   padding-bottom: 20px;
 }
 
@@ -149,9 +156,8 @@ header h2 {
 /* Carousel Styling section */
 
 .Carousel{
-    height: 50vw;
-    width: 50vw;
-    margin:auto; 
+    height: 100vw;
+    margin: auto; 
 }
 
 
@@ -159,6 +165,9 @@ header h2 {
   #menu h2{
     background-color:#1B264F;
     color: #F6F7EB;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   .menu-tab {
@@ -177,6 +186,8 @@ header h2 {
     border-radius: 16px;
     width: 300px;
     height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 
@@ -187,12 +198,11 @@ header h2 {
   #about  {
     background-color: #1B264F;
     color:#F6F7EB;
-    font-family: inherit;
-    font-size: inherit;
     text-align: center;
     text-align: center;
+    margin-top: 50px;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
 
@@ -258,6 +268,7 @@ header h2 {
   #summary h2{
     color: #F6F7EB;
     padding: 0px;
+    font-size: 45px;
   }
 
   #summary p {
@@ -267,22 +278,8 @@ header h2 {
     font-weight: lighter;
   }
 
-
-  #gallery{
-    background-color: #1B264F;
-    padding: 10px
-  }
-
-  #gallery img{
-    border-radius: 25px;
-    padding: 10px
-  }
-
-  #gallery h2{
-    color:#F6F7EB;
-  }
   
-/* Tables */
+/* Team Results */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -324,20 +321,28 @@ tr:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
   
-  
+/* Individual Results*/
+
 p .athlete{
   padding: 0px;
   margin: 0px;
   min-width: 0px;
 }
+
+.athlete figcaption{
+  color: #F6F7EB;
+}
+
 .athlete {
   display: inline-grid;
   align-items: center;
+  border-radius: 25px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   gap: 20px;
   margin-bottom: 20px;
   padding: 12px;
   min-width: 180px;
+  background-color: #1B264F;
 }
 
 .athlete img {
@@ -345,28 +350,48 @@ p .athlete{
   border-radius: 16px;
   width: 300px;
   height: 300px;
+  margin: 15px;
 }
 
 .athlete dl {
-  display: grid;
-  background-color: #f2ecdc;
-  border-radius: 25px;
+  display: grid;  
+  background-color: #0e1429;
   box-shadow: inset;
   grid-template-columns: auto auto; /* Ensure space for dt and dd */
   grid-template-rows: repeat(3, auto); /* Three rows for the three pairs */
   row-gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 12px;
 }
 
-.athlete dt {
+.athlete dt { 
   font-weight: bold;
-  color: #1B264F;
+  color: #F6F7EB;
   grid-column: 1; /* Place dt in the first column */
 }
 
 .athlete dd {
   margin-left: 10px;
-  color: #9C3848;
+  color: #F6F7EB;
   grid-column: 2; /* Place dd in the second column */
+}
+
+
+/* Gallery */
+
+#gallery{
+  background-color: #1B264F;
+  padding: 10px
+}
+
+#gallery img{
+  border-radius: 25px;
+  padding: 10px
+}
+
+#gallery h2{
+  color:#F6F7EB;
 }
 
 
