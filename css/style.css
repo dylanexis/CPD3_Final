@@ -1,3 +1,5 @@
+
+
 body{
     font-family: "Bebas Neue", Helvetica, sans-serif;
     color: #1B264F; 
@@ -98,8 +100,32 @@ div{
     display: block;
   }
 
+/* Header Animation */
+  .zoom-in-out-element {
+    animation: zoom-in-zoom-out 2s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      scale: 100%;
+    }
+    50% {
+      scale: 125%;
+    }
+    100% {
+      scale: 100%;
+    }
+  }
 
-.SXC{
+  /*Prefers Reduced Motion*/
+
+  @media (prefers-reduced-motion){
+    .zoom-in-out-element{
+      animation:none;
+    }
+  }
+
+  .SXC{
   line-height: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -287,10 +313,6 @@ table a{
   color: #1B264F;
 }
 
-table a:hover{
-  color:#e91e63;
-}
-
 th, td {
   padding: 15px;
   text-align: left;
@@ -352,8 +374,8 @@ p .athlete{
   display: grid;  
   background-color: #0e1429;
   box-shadow: inset;
-  grid-template-columns: auto auto; /* Ensure space for dt and dd */
-  grid-template-rows: repeat(3, auto); /* Three rows for the three pairs */
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto); 
   row-gap: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -363,13 +385,13 @@ p .athlete{
 .athlete dt { 
   font-weight: bold;
   color: #F6F7EB;
-  grid-column: 1; /* Place dt in the first column */
+  grid-column: 1; 
 }
 
 .athlete dd {
   margin-left: 10px;
   color: #F6F7EB;
-  grid-column: 2; /* Place dd in the second column */
+  grid-column: 2; 
 }
 
 
@@ -397,3 +419,4 @@ p .athlete{
       padding-top: 40px;
       line-height: 40px;
   }
+
