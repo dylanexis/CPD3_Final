@@ -37,7 +37,7 @@ def csv_to_html(csv_filename, output_folder):
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
    <body>
-   <a href = "#main">Skip to Main Content</a>
+   <a class = "skip-hidden" href = "#main">Skip to Main Content</a>
    <!--Navbar-->
    <div class ="navbar">
       <a href ="../index.html">Home</a>

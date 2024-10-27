@@ -15,24 +15,19 @@ div{
 
 /* Skip link */
 
-a.skip{
-    color:#1B264F;
-    position: absolute;
-    top: -300px;
-    visibility: hidden;
-}
-
-a.skip:focus {
-  visibility: visible;
-    top:10px;
-    outline: none;
+.skip-hidden{
+    padding: 8px;
+    left: 50%;
     background-color: #F6F7EB;
+    height: 30px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: 0.3s;
 }
 
-a.skip:hover{ 
-  background-color: #F6F7EB;
+.skip-hidden:focus{
+  transform: translateY(0%);
 }
-
 
 
   /* NavBar and Dropdown*/
