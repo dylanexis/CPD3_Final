@@ -104,7 +104,7 @@ div{
 
 /* Header Animation */
   .zoom-in-out-element {
-    animation: zoom-in-zoom-out 2s ease infinite;
+    animation: zoom-in-zoom-out 4s ease infinite;
   }
   
   @keyframes zoom-in-zoom-out {
@@ -120,39 +120,7 @@ div{
   }
 
 
-  @media (prefers-reduced-motion){
-    .zoom-in-out-element{
-      animation:none;
-    }
-  }
-
-  @media (prefers-color-scheme: dark){
-   body{
-    color: #F6F7EB; 
-    background-color: #1B264F;
-   }
-
-   header {
-    background-color: #F6F7EB;
-  }
-
-  #individual-results {
-    color: #F6F7EB;
-    background-color: #0e1429;
-
-  }
-
-  #individual-results h2 {
-    color: #F6F7EB;
-  }
-
-  #team-results h2 {
-    color: #F6F7EB;
-  }
-  }
-
-
-  .SXC{
+.SXC{
   line-height: 100px;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -162,7 +130,7 @@ h1{
     color:#1B264F;
     padding: 0.625rem;
     font-size: 6.25rem;
-    line-height: 3.125remx;
+    line-height: 3.125rem;
 }
 
 
@@ -195,10 +163,7 @@ header h2 {
   padding-bottom: 1.25rem;
 }
 
-
-
 /* Carousel Styling section */
-
 .Carousel{
     height: 75vw;
     margin: auto; 
@@ -236,10 +201,8 @@ header h2 {
   }
 
 
-  /* End menu grid */
 
-  /* About Section Styling */
-  
+  /* About Section Styling */ 
   #about  {
     background-color: #1B264F;
     color:#F6F7EB;
@@ -256,7 +219,6 @@ header h2 {
   #about h2{
     color:#F6F7EB
   }
-
 
   #about img{
     width: 100px; 
@@ -299,11 +261,10 @@ header h2 {
     padding-right: 10px;
   }
 
-  /* End About Section Styles*/
 
+  /* ---Styling Meet Pages--- */
 
-  /* Styling Meet Pages*/
-
+  /* Race Summary */
   #summary{
     background-color: #1B264F;
     color: #F6F7EB;
@@ -340,14 +301,12 @@ table a{
 th, td {
   padding: 15px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
-  backdrop-filter: blur(4px);
+  border-bottom: 1px solid #0e1429;
 }
 
 th {
   background-color: #1B264F;
   color: #F6F7EB;
-  text-transform: uppercase;
 }
 
 tr:nth-child(even) {
@@ -363,7 +322,6 @@ tr:hover {
 }
   
 /* Individual Results*/
-
 p .athlete{
   padding: 0px;
   margin: 0px;
@@ -420,7 +378,6 @@ p .athlete{
 
 
 /* Gallery */
-
 #gallery{
   background-color: #1B264F;
   padding: 10px
@@ -437,14 +394,14 @@ p .athlete{
 
 
   /* Footer */
-
   footer {
       font-size: 25px;
       padding-top: 40px;
       line-height: 40px;
   }
 
-  /* User Preferences */
+
+  /* ---- User Preferences ---- */
   @media (prefers-reduced-motion){
     .zoom-in-out-element{
       animation:none;
@@ -457,11 +414,68 @@ p .athlete{
     background-color: #1B264F;
    }
 
-   header {
-    background-color: #F6F7EB;
+   .skip-hidden{
+    color:#1B264F;
+   }
+
+   .navbar {
+    background-color: #0e1429;
+   }
+
+   .dropdown .dropbtn{
+    background-color: #0e1429;
+   }
+
+   .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #1B264F;
+    border: #e94f37;
   }
 
-  #individual-results {
+   .dropdown-content{
+    background-color: #0e1429;
+   }
+
+   .dropdown-content a:hover {
+    background-color: #1B264F;
+    border: 5px solid #e94f37;
+
+  }
+
+   .dropdown:hover, .dropdown:focus{
+    background-color: #1B264F;
+    border: #e94f37;
+   }
+
+   h1{
+    color: #F6F7EB;
+   }
+
+   header h1 a{
+    color: #F6F7EB;
+   }
+
+   header h1 a:hover, header h1 a:focus{
+    background-color:#1B264F;
+    text-decoration: underline;
+   }
+
+   header h2{
+    color: #F6F7EB;
+   }
+
+   #menu{
+    background-color: #0e1429;
+   }
+
+   #menu h2{
+    background-color: #0e1429;
+   }
+
+   #summary{
+    background-color: #0e1429;
+  }
+  
+   #individual-results {
     color: #F6F7EB;
     background-color: #0e1429;
 
@@ -471,7 +485,33 @@ p .athlete{
     color: #F6F7EB;
   }
 
+  th {
+    background-color: #0e1429;
+    color: #F6F7EB;
+  }
+
+  th, td{
+    border-bottom-color: #F6F7EB;
+  }
+
+  tr:nth-child(even) {
+    background-color: #141d3b;
+  }
+  
+  tr:nth-child(odd){
+    background-color: #141a2c;
+  }
+  
+  tr:hover {
+    background-color: rgba(255, 255, 255, 0.001);
+  }
+    
+
   #team-results h2 {
     color: #F6F7EB;
+  }
+
+  footer{
+    background-color: #0e1429;
   }
   }
