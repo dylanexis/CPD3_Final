@@ -120,12 +120,38 @@ div{
     }
   }
 
-  /*Prefers Reduced Motion*/
+  /*User Preferences*/
 
   @media (prefers-reduced-motion){
     .zoom-in-out-element{
       animation:none;
     }
+  }
+
+  @media (prefers-color-scheme: dark){
+   body{
+    color: #F6F7EB; 
+    background-color: #1B264F;
+   }
+
+   header {
+    background-color: #F6F7EB;
+  }
+
+  #individual-results {
+    color: #F6F7EB;
+    background-color: #0e1429;
+
+  }
+
+  #individual-results h2 {
+    color: #F6F7EB;
+  }
+
+  #team-results h2 {
+    color: #F6F7EB;
+  }
+   
   }
 
   .SXC{
@@ -144,7 +170,7 @@ h1{
 
 header h1 a{
     font-size: 60px;
-    color:inherit;
+    color: #1B264F;
     text-decoration: none;
 }
 
