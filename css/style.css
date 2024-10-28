@@ -120,40 +120,6 @@ div{
     }
   }
 
-  /*User Preferences*/
-
-  @media (prefers-reduced-motion){
-    .zoom-in-out-element{
-      animation:none;
-    }
-  }
-
-  @media (prefers-color-scheme: dark){
-   body{
-    color: #F6F7EB; 
-    background-color: #1B264F;
-   }
-
-   header {
-    background-color: #F6F7EB;
-  }
-
-  #individual-results {
-    color: #F6F7EB;
-    background-color: #0e1429;
-
-  }
-
-  #individual-results h2 {
-    color: #F6F7EB;
-  }
-
-  #team-results h2 {
-    color: #F6F7EB;
-  }
-   
-  }
-
   .SXC{
   line-height: 100px;
   padding-top: 30px;
@@ -449,3 +415,38 @@ p .athlete{
       line-height: 40px;
   }
 
+
+
+  /*User Preferences*/
+
+  @media (prefers-reduced-motion){
+    .zoom-in-out-element{
+      animation:none;
+    }
+  }
+
+  @media (prefers-color-scheme: dark){
+   body{
+    color: #F6F7EB; 
+    background-color: #1B264F;
+   }
+
+   header {
+    background-color: #F6F7EB;
+  }
+
+  #individual-results {
+    color: #F6F7EB;
+    background-color: #0e1429;
+
+  }
+
+  #individual-results h2 {
+    color: #F6F7EB;
+  }
+
+  #team-results h2 {
+    color: #F6F7EB;
+  }
+   
+  }
