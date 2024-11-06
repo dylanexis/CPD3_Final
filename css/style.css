@@ -400,6 +400,9 @@ p .athlete{
       line-height: 40px;
   }
 
+  /* Large Screens */
+
+  @media and screen (min-width )
 
   /* ---- User Preferences ---- */
   @media (prefers-reduced-motion){
