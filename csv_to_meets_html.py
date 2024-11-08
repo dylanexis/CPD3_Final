@@ -56,6 +56,7 @@ def csv_to_html(csv_filename, output_folder):
     
    <!-- Navigation for Large Screens -->
    <nav>
+        <a href = "../index.html">Home</a>
         <a href = "#summary">Summary</a>
         <a href = "#team-results">Team Results</a>
         <a href="#individual-results">Individual Results</a>
@@ -145,6 +146,8 @@ def csv_to_html(csv_filename, output_folder):
 
 
                      </footer>
+
+        <script src="../js/script.js"></script>
         </body>
 </html>
 """
