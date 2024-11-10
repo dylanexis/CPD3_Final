@@ -38,18 +38,24 @@ def csv_to_html(csv_filename, output_folder):
 </head>
    <body>
    <a class = "skip-hidden" href = "#main">Skip to Main Content</a>
-   <!--Navbar-->
    <div class ="navbar">
-      <a href ="../index.html">Home</a>
+      <a href ="#" tabindex = "0">Home</a>
       <div class = "dropdown">
-         <button class = "dropbtn">More
+          <button 
+          class = "dropbtn"
+          tabindex="0" 
+          aria-haspopup="true" 
+          aria-expanded="false"
+          onclick="toggleDropdown('dropMenu')" 
+          onkeydown="handleDropdownKeyboard(event, 'dropMenu')">
+          More
          <i class="fa fa-caret-down"></i>
          </button>
-         <div class="dropdown-content">
-            <a href = "#summary">Summary</a>
-            <a href = "#team-results">Team Results</a>
-            <a href="#individual-results">Individual Results</a>
-            <a href="#gallery">Gallery</a>
+         <div class="dropdown-content" role = "menu" id = "dropMenu">
+            <a href = "#summary" tabindex="0" role ="menuitem" >Summary</a>
+            <a href = "#team-results" tabindex="0" role ="menuitem">Team Results</a>
+            <a href="#individual-results" tabindex="0" role ="menuitem">Individual Results</a>
+            <a href="#gallery" tabindex="0" role ="menuitem">Gallery</a>
          </div>
       </div>
    </div>

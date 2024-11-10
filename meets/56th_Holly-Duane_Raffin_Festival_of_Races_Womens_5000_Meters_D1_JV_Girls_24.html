@@ -14,18 +14,24 @@
 </head>
    <body>
    <a class = "skip-hidden" href = "#main">Skip to Main Content</a>
-   <!--Navbar-->
    <div class ="navbar">
-      <a href ="../index.html">Home</a>
+      <a href ="#" tabindex = "0">Home</a>
       <div class = "dropdown">
-         <button class = "dropbtn">More
+          <button 
+          class = "dropbtn"
+          tabindex="0" 
+          aria-haspopup="true" 
+          aria-expanded="false"
+          onclick="toggleDropdown('dropMenu')" 
+          onkeydown="handleDropdownKeyboard(event, 'dropMenu')">
+          More
          <i class="fa fa-caret-down"></i>
          </button>
-         <div class="dropdown-content">
-            <a href = "#summary">Summary</a>
-            <a href = "#team-results">Team Results</a>
-            <a href="#individual-results">Individual Results</a>
-            <a href="#gallery">Gallery</a>
+         <div class="dropdown-content" role = "menu" id = "dropMenu">
+            <a href = "#summary" tabindex="0" role ="menuitem" >Summary</a>
+            <a href = "#team-results" tabindex="0" role ="menuitem">Team Results</a>
+            <a href="#individual-results" tabindex="0" role ="menuitem">Individual Results</a>
+            <a href="#gallery" tabindex="0" role ="menuitem">Gallery</a>
          </div>
       </div>
    </div>
@@ -310,31 +316,31 @@
 
         <section id = "gallery" tabindex = "0">
         <h2>Gallery</h2>
-        <img src=../images/meets/235827/IMG_9030.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9018.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_20240829_171731303.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9049.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_8984.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9039.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9032.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9023.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9022.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9031.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9050.jpg width = "200" alt="">
+        <img src=../images/meets/235827/IMG_9031.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9019.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9038.jpg width = "200" alt="">
 <img src=../images/meets/235827/IMG_9036.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9034.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_20240829_171701146.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_8974.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9024.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_20240829_171709091.jpg width = "200" alt="">
 <img src=../images/meets/235827/IMG_9045.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9037.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9043.jpg width = "200" alt="">
 <img src=../images/meets/235827/IMG_9033.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_8973.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_20240829_171701146.jpg width = "200" alt="">
 <img src=../images/meets/235827/IMG_9025.jpg width = "200" alt="">
-<img src=../images/meets/235827/IMG_9051.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9030.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9018.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_8973.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9026.jpg width = "200" alt="">
 <img src=../images/meets/235827/IMG_9035.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9034.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9032.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9037.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9039.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9050.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9023.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_8984.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_20240829_171709091.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9049.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9024.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_8974.jpg width = "200" alt="">
+<img src=../images/meets/235827/IMG_9051.jpg width = "200" alt="">
    </section>
    </main>   
    <footer>
