@@ -437,7 +437,7 @@ p .athlete{
 
   /* Tablet View*/
 
-  @media screen and (min-width: 760px){
+  @media screen and (min-width: 960px){
     nav{
       display: flex;
     }
