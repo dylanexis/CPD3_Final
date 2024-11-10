@@ -72,7 +72,7 @@ def csv_to_html(csv_filename, output_folder):
    <main id = "main">
 
 
-    <section class="summary" id = "summary">
+    <section class="summary" id = "summary" tabindex = "0">
       <h2>Race Summary</h2>
       {summary_text}
     </section>
@@ -81,7 +81,7 @@ def csv_to_html(csv_filename, output_folder):
 
         # Start container for individual results
         html_content += """<section id="team-results">\n
-        <h2>Team Results</h2>"""
+        <h2 tabindex = "0">Team Results</h2>"""
 
         # Process the remaining rows (after the first five)
         html_content += """<table>\n"""
@@ -103,7 +103,7 @@ def csv_to_html(csv_filename, output_folder):
                     html_content += "</table>\n"
                     html_content += """</section>\n
                     <section id="individual-results">\n
-                    <h2>Individual Results</h2>"""
+                    <h2 tabindex = "0" >Individual Results</h2>"""
 
                 place = row[0]
                 grade = row[1]
@@ -116,7 +116,7 @@ def csv_to_html(csv_filename, output_folder):
 <div class="athlete">
 <figure> 
     <img src="../images/profiles/{profile_pic}" width="200" alt="Profile picture of {name}"> 
-    <figcaption>{name}</figcaption>
+    <figcaption tabindex = "0">{name}</figcaption>
 </figure>
 <dl>
     <dt>Place</dt><dd>{place}</dd>
@@ -127,7 +127,7 @@ def csv_to_html(csv_filename, output_folder):
 """
 
         html_content += """</section>\n
-        <section id = "gallery">
+        <section id = "gallery" tabindex = "0">
         <h2>Gallery</h2>
         """
 

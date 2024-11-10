@@ -12,7 +12,7 @@
 <title>Skyline CrossCountry</title>
 </head>
 <body>
-  <a class = "skip-hidden" href = "#main">Skip to Main Content</a>
+  <a class = "skip-hidden" href = "#menu">Skip to Main Content</a>
  
     <!--Nav bars-->
     <div class ="navbar">
@@ -29,8 +29,8 @@
          <i class="fa fa-caret-down"></i>
          </button>
          <div class="dropdown-content" role = "menu" id = "dropdownMenu">
-            <a href = "#menu" >Meets</a>
-            <a href = "#about">about</a>
+            <a href = "#menu"  tabindex="0"  >Meets</a>
+            <a href = "#about"  tabindex="0" >about</a>
          </div>
       </div>
    </div>
@@ -47,15 +47,33 @@
        <h1 class = "SXC zoom-in-out-element" >Skyline Cross Country</h1>
 
 </header>
-   <section id = "main">
    <section id = "carousel">
    <!--Photo Carousel-->
       <img class = "Carousel" src = "images/profiles/21147172.jpg" alt = "Profile photo of Micah Winchell">
       <img class = "Carousel" src = "images/profiles/23349718..jpg" alt = "Profile photo of Elin Tenbrink">
       <img class = "Carousel" src = "images/profiles/26322021.jpg" alt = "Profile photo of Sage O' Lor" >
       <img class = "Carousel" src = "images/profiles/26328690.jpg" alt = "Profile photo of Lucia Llanes">
+   
    </section>
-   </section>
+
+       <div class = "home_gallery">
+         <figure class = "gallery_item item1">
+            <img src = "images/meets/238311/IMG_9257.jpg" class = gallery_image alt = "Meet photo">
+         </figure>
+
+         <figure class = "gallery_item item2">
+            <img src = "images/meets/947091/IMG_9438.jpg" class = "gallery_image" alt = "Meet photo">
+         </figure>
+
+         <figure class = "gallery_item item2">
+            <img src = "images/profiles/23349703.jpg" class = "gallery_image" alt = "Meet photo">
+         </figure>
+            
+         <figure class = "gallery_item item3">
+            <img src = "images/meets/947091/IMG_9447.jpg" class = "gallery_image" alt = "Meet photo">
+         </figure>
+
+         </div>
       
    <!--Meets Section-->
     <section id = "menu">
@@ -78,10 +96,10 @@
          <i class="fa fa-caret-down"></i>
          </button>
          <div class="dropdown-content" role = "menu" id = "dropdownMenu1">
-            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html">Mens' 5000 Meters</a>
-            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_Girls_24.html">Womens' 5000 Meters</a>
-            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_JV_Boys_24.html">JV Mens' 5000 Meters</a>
-            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_JV_Girls_24.html"> JV Womens' 5000 Meters</a>
+            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html"  tabindex="0" >Mens' 5000 Meters</a>
+            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_Girls_24.html"  tabindex="0" >Womens' 5000 Meters</a>
+            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_JV_Boys_24.html"  tabindex="0" >JV Mens' 5000 Meters</a>
+            <a href = "meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_JV_Girls_24.html"  tabindex="0" > JV Womens' 5000 Meters</a>
          </div>  
       </div>
       </figcaption>
@@ -104,8 +122,8 @@
          <i class="fa fa-caret-down"></i>
          </button>
          <div class="dropdown-content" role = "menu" id = "dropdownMenu2">
-            <a href = "meets/37th_Early_Bird_Open_Mens_5000_Meters_HS_Open_5K_24.html">Mens' 5000 Meters</a>
-            <a href = "meets/37th_Early_Bird_Open_Womens_5000_Meters_HS_Open_5K_24.html">Womens' 5000 Meters</a>
+            <a href = "meets/37th_Early_Bird_Open_Mens_5000_Meters_HS_Open_5K_24.html" tabindex="0" >Mens' 5000 Meters</a>
+            <a href = "meets/37th_Early_Bird_Open_Womens_5000_Meters_HS_Open_5K_24.html"  tabindex="0" >Womens' 5000 Meters</a>
          </div>  
       </div>
    </figcaption>
@@ -254,9 +272,9 @@ function carousel() {
 
   // Handle keyboard interactions for dropdown
   function handleDropdownKeyboard(event, dropdownId) {
-    var dropdown = document.getElementById(dropdownId);
-  var links = dropdown.querySelectorAll('a');
-  var focusedLinkIndex = Array.from(links).indexOf(document.activeElement);
+   var dropdown = document.getElementById(dropdownId);
+   var links = dropdown.querySelectorAll('a');
+   var focusedLinkIndex = Array.from(links).indexOf(document.activeElement);
   
   if (event.key === 'ArrowDown') {
     // Focus on the next link, or first link if at the end
@@ -266,7 +284,9 @@ function carousel() {
       links[focusedLinkIndex + 1].focus();
     }
     event.preventDefault();
-  } else if (event.key === 'ArrowUp') {
+  } 
+  
+  else if (event.key === 'ArrowUp') {
     // Focus on the previous link, or last link if at the beginning
     if (focusedLinkIndex === 0) {
       links[links.length - 1].focus();
