@@ -250,6 +250,19 @@ header h2 {
     grid-row: 1/7;
   }
 
+  .item4 img{
+    border-top-left-radius: 25px;
+  }
+
+  .item5 img{
+    border-bottom-left-radius: 25px;
+  }
+
+  .item6 img{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
 
 
   /* Meet Grid */
